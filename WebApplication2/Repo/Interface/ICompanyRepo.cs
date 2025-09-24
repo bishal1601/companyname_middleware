@@ -1,6 +1,9 @@
-﻿namespace WebApplication2.Repo.Interface;
+﻿using WebApplication2.Entity;
+using WebApplication2.Services.Interfaces;
 
-public class ICompanyRepo
+namespace WebApplication2.Repo.Interface;
+
+public interface ICompanyRepo
 {
-    
+    Task<CompanyDto?> GetCompanyData();
 }

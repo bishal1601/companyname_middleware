@@ -1,6 +1,6 @@
 ﻿namespace WebApplication2.Middleware;
 
-public static class UseMyCustomMiddlewareExtension
+public static class MyCustomMiddlewareExtension
 {
     public static IApplicationBuilder UseCustomMiddleware(this IApplicationBuilder builder)
     {

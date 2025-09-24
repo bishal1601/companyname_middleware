@@ -1,6 +1,14 @@
-﻿namespace WebApplication2.Services.Interfaces;
+﻿using WebApplication2.Entity;
 
-public class ICompanyService
+namespace WebApplication2.Services.Interfaces;
+
+public interface ICompanyService
 {
-    
+    Task<Company> Update(CompanyDto dto);
+}
+
+public class CompanyDto
+{
+    public Guid Id { get; set; }
+    public string Name { get; set; }
 }
